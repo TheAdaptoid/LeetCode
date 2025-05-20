@@ -1,0 +1,26 @@
+[project]
+name = "leetcode"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["ruff>=0.11.10"]
+
+[tool.ruff]
+# Enable specific linting rules
+lint.select = ["E", "F", "W", "C", "N"]
+
+# Exclude specific files or directories
+exclude = ["venv", ".git", "__pycache__"]
+
+# Maximum line length for formatting
+line-length = 88
+
+# Enable autofix for certain rules
+fix = true
+
+# Ignore specific rules (example: ignore unused imports)
+lint.ignore = ["F401", "E501"]
+
+# Target Python version
+target-version = "py311"
